@@ -1,0 +1,110 @@
+[
+  {
+    "image": "https://i.ibb.co.com/ymyB7Lcc/Lawyer-1.jpg",
+    "name": "Advocate Rahman Hossain",
+    "speciality": "Corporate Law",
+    "experience": "15 years",
+    "license_number": "BD-12345",
+    "fee": "$200/hour",
+    "availability": "Monday-Friday"
+  },
+  {
+    "image": "https://i.ibb.co.com/BVrcGGzt/Lawyer-2.jpg",
+    "name": "Barrister Shaila Ahmed",
+    "speciality": "Family Law",
+    "experience": "10 years",
+    "license_number": "BD-67890",
+    "fee": "$150/hour",
+    "availability": "Tuesday-Saturday"
+  },
+  {
+    "image": "https://i.ibb.co.com/20XQR8LB/Lawyer-3.jpg",
+    "name": "Advocate Tanvir Hasan",
+    "speciality": "Criminal Defense",
+    "experience": "12 years",
+    "license_number": "BD-11223",
+    "fee": "$180/hour",
+    "availability": "Monday-Friday"
+  },
+  {
+    "image": "https://i.ibb.co.com/VYhRFV9z/Lawyer-4.jpg",
+    "name": "Barrister Nusrat Jahan",
+    "speciality": "Intellectual Property",
+    "experience": "8 years",
+    "license_number": "BD-44556",
+    "fee": "$170/hour",
+    "availability": "Wednesday-Sunday"
+  },
+  {
+    "image": "https://i.ibb.co.com/cXDXcbHt/Lawyer-5.jpg",
+    "name": "Advocate Mahmudul Karim",
+    "speciality": "Tax Law",
+    "experience": "20 years",
+    "license_number": "BD-77889",
+    "fee": "$250/hour",
+    "availability": "Monday-Friday"
+  },
+  {
+    "image": "https://i.ibb.co.com/0RHNkzhd/Lawyer-6.jpg",
+    "name": "Barrister Farzana Rahman",
+    "speciality": "Human Rights",
+    "experience": "9 years",
+    "license_number": "BD-33445",
+    "fee": "$160/hour",
+    "availability": "Tuesday-Saturday"
+  },
+  {
+    "image": "https://i.ibb.co.com/gLTFLsxn/Lawyer-7.jpg",
+    "name": "Advocate Imran Chowdhury",
+    "speciality": "Real Estate Law",
+    "experience": "14 years",
+    "license_number": "BD-55667",
+    "fee": "$190/hour",
+    "availability": "Monday-Friday"
+  },
+  {
+    "image": "https://i.ibb.co.com/ZDF4tH7/Lawyer-8.jpg",
+    "name": "Barrister Rafiq Alam",
+    "speciality": "Employment Law",
+    "experience": "11 years",
+    "license_number": "BD-88990",
+    "fee": "$175/hour",
+    "availability": "Wednesday-Sunday"
+  },
+  {
+    "image": "https://i.ibb.co.com/Fk7Y6mFM/Lawyer-9.jpg",
+    "name": "Advocate Shakib Khan",
+    "speciality": "Immigration Law",
+    "experience": "13 years",
+    "license_number": "BD-22334",
+    "fee": "$200/hour",
+    "availability": "Monday-Friday"
+  },
+  {
+    "image": "https://i.ibb.co.com/zVm6RX9s/Lawyer-10.jpg",
+    "name": "Barrister Nayeem Islam",
+    "speciality": "Environmental Law",
+    "experience": "7 years",
+    "license_number": "BD-66778",
+    "fee": "$150/hour",
+    "availability": "Tuesday-Saturday"
+  },
+  {
+    "image": "https://i.ibb.co.com/Vc5N0LfX/Lawyer-11.jpg",
+    "name": "Advocate Arif Hossain",
+    "speciality": "Banking & Finance Law",
+    "experience": "16 years",
+    "license_number": "BD-99001",
+    "fee": "$220/hour",
+    "availability": "Monday-Friday"
+  },
+  {
+    "image": "https://i.ibb.co.com/4R4sDQkB/Lawyer-12.jpg",
+    "name": "Barrister Salman Rahman",
+    "speciality": "International Law",
+    "experience": "18 years",
+    "license_number": "BD-11234",
+    "fee": "$240/hour",
+    "availability": "Wednesday-Sunday"
+  }
+]
