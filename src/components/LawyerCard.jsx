@@ -13,7 +13,7 @@ const LawyerCard = ({ data }) => {
 
 
     return (
-        <div className="flex rounded-2xl border border-gray-200">
+        <div className="card lg:card-side rounded-2xl border border-gray-200">
             <div className='p-6 flex justify-center items-center'>
                 <div className="w-[160px] h-[160px] flex-shrink-0">
                     <img
