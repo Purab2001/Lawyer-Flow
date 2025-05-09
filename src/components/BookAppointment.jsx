@@ -47,7 +47,7 @@ const BookAppointment = ({ lawyer }) => {
         const existingAppointments = appointments.find(appointment => appointment.lawyerLicense === lawyer?.license_number);
         if (existingAppointments) {
             deleteAppointments(existingAppointments.id);
-            toast.success(`Appointment cancelled with ${lawyer?.name} successfully!`, {
+            toast.error(`Appointment cancelled with ${lawyer?.name} successfully!`, {
                 position: "top-right",
                 autoClose: 3000,
                 hideProgressBar: false,
@@ -88,21 +88,34 @@ const BookAppointment = ({ lawyer }) => {
                 <FiAlertCircle className="mr-2 text-xl text-yellow-500" />
                 Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.
             </span>
-            <button
-                onClick={handleAppointmentToggle}
-                disabled={!isAvailableToday}
-                className={`relative cursor-pointer block items-center justify-start py-2 overflow-hidden font-medium transition-all rounded-full group w-full
-                    ${isAvailableToday ? 'bg-green-600 hover:bg-white' : 'bg-gray-300 text-gray-400 cursor-not-allowed'}
-                `}
-                aria-label="Book appointment"
-            >
-                <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
-                <span className={`relative w-full text-left transition-colors duration-200 ease-in-out text-lg
-                    ${isAvailableToday ? 'text-white group-hover:text-green-600' : 'text-gray-400'}
-                `}>
-                    Book Appointment
-                </span>
-            </button>
+            {isBooked ? (
+                <button
+                    onClick={handleAppointmentToggle}
+                    className="relative cursor-pointer block items-center justify-start py-2 overflow-hidden font-medium transition-all rounded-full group w-full bg-red-600 hover:bg-white"
+                    aria-label="Cancel appointment"
+                >
+                    <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+                    <span className="relative w-full text-left transition-colors duration-200 ease-in-out text-lg text-white group-hover:text-red-600">
+                        Cancel Appointment
+                    </span>
+                </button>
+            ) : (
+                <button
+                    onClick={handleAppointmentToggle}
+                    disabled={!isAvailableToday}
+                    className={`relative cursor-pointer block items-center justify-start py-2 overflow-hidden font-medium transition-all rounded-full group w-full
+            ${isAvailableToday ? 'bg-green-600 hover:bg-white' : 'bg-gray-300 text-gray-400 cursor-not-allowed'}
+        `}
+                    aria-label="Book appointment"
+                >
+                    <span className="absolute inset-0 border-0 group-hover:border-[25px] ease-linear duration-100 transition-all border-white rounded-full"></span>
+                    <span className={`relative w-full text-left transition-colors duration-200 ease-in-out text-lg
+            ${isAvailableToday ? 'text-white group-hover:text-green-600' : 'text-gray-400'}
+        `}>
+                        Book Appointment
+                    </span>
+                </button>
+            )}
         </div>
     );
 };
