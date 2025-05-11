@@ -1,7 +1,7 @@
 import React from 'react';
 import { PiTrademarkRegistered } from "react-icons/pi";
 import Badge from '../ui/Badge';
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
 
 
 const LawyerCard = ({ data }) => {

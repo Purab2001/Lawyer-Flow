@@ -51,21 +51,15 @@ const LawyerDetails = () => {
                     </div>
                     <div className="text-gray-700 flex items-center">
                         <span className="mr-2 text-base font-bold">Availability:</span>
-                        {Array.isArray(availability) && availability.length > 0 ? (
-                            <div className="flex flex-wrap gap-2">
-                                {availability.map(day => (
-                                    <Badge key={day} text={day} color="green-500" />
-                                ))}
-                            </div>
-                        ) : typeof availability === 'string' && availability.length > 0 ? (
-                            <div className="flex flex-wrap gap-2">
-                                {availability.split(/,|\s*[-&]\s*|\s+/).map(day => (
-                                    day && <Badge key={day} text={day} color="green-500" />
-                                ))}
-                            </div>
-                        ) : (
-                            <Badge text="Not available" color="red-500" />
-                        )}
+{typeof availability === 'string' && availability.length > 0 ? (
+    <div className="flex flex-wrap gap-2">
+        {availability.split(/,|\s*[-&]\s*|\s+/).map(day => (
+            day && <Badge key={day} text={day} color="green-500" />
+        ))}
+    </div>
+) : (
+    <Badge text="Not available" color="red-500" />
+)}
                     </div>
                     <p className='text-gray-700 font-bold'>Consultation Fee: <span className='text-[#0EA106]'>{fee}</span></p>
                 </div>
